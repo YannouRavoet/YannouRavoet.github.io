@@ -1,0 +1,16 @@
+html,body{
+    height:100%;
+    width:100%;
+}
+#header{
+    height: 15%;
+    background: #292929;
+    color: white;
+}
+#footer{
+    height: 10%;
+    background: #292929;
+}
+#body{
+    height:75%;
+}
