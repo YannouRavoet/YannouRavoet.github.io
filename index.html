@@ -5,15 +5,90 @@
     <title>YannouRavoet.github.io</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <script src="tabmanager.js"></script>
+    <script src="projectmanager.js"></script>
 </head>
 <body>
-<div id="header" class="container-fluid d-flex align-items-center justify-content-around">
-    <h1>Yannou Ravoet</h1>
+<div id="header" class="container-fluid d-flex align-items-center justify-content-between">
+    <h1 style="padding-left:4em;">Yannou Ravoet</h1>
+    <div class="tab" style="margin-right:8em;">
+        <button id="ProjectsTab" class="tablinks" onclick="openTab(event, 'ProjectCategories')">Projects</button>
+        <button id="AboutMeTab" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+        <button id="ContactTab" class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
 </div>
-<div id="body" class="container-fluid">
+<div id="body">
+    <div id="ProjectCategories" class="content align-items-center">
+        <div class="col-md-12">
+            <div class="row d-flex justify-content-around">
+                <div id="Unity" class="col-md-3 categoryBox">
+                    <a onclick="openCategory('Unity')">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projectsCategories/UnityLogo.png">
+                        </div>
+                        <div>
+                            <h4>Unity</h4>
+                            <p>C#</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="OpenAI" class="col-md-3 categoryBox">
+                    <a onclick="openCategory('OpenAI')">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projectsCategories/OpenAIGymLogo.jpg">
+                        </div>
+                        <div>
+                            <h4>OpenAI GYM</h4>
+                            <p>Python, Reinforcement Learning, gym, tensorflow</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="Kaggle" class="col-md-3 categoryBox">
+                    <a onclick="openCategory('Kaggle')">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projectsCategories/KaggleLogo.jpg">
+                        </div>
+                        <div>
+                            <h4>Kaggle</h4>
+                            <p>Python, Machine Learning, scikit-learn, tensorflow</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="AboutMe" class="content">
+        <h1>About Me</h1>
+    </div>
+    <div id="Contact" class="content">
+        <h1>Contact</h1>
+    </div>
+    <div id="UnityCategory" class="content align-items-center">
+        <div class="col-md-12">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-3 projectBox">
+                    <a href="https://YannouRavoet.github.io/UnityShooter">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projects/TopDownShooter.png">
+                        </div>
+                        <div>
+                            <h4>Top Down Shooter</h4>
+                            <p>C#, Map Generator, Camping Detection, Simple Enemy AI</p>
+                        </div>
+                        <a href="https://github.com/YannouRavoet/TopDownShooter">
+                            <img class="githubLogo" src="resources/images/githubLogo.png">
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <div id="footer" class="container-fluid"></div>
 
+<script>
+    document.getElementById("ProjectsTab").click();
+</script>
 </body>
 </html>
