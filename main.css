@@ -2,6 +2,7 @@
 html,body{
     height:100%;
     width:100%;
+    overflow: hidden;
 }
 #header{
     height: 10%;
@@ -21,6 +22,19 @@ html,body{
     background-image: url("resources/images/graybackground.jpg");
     mix-blend-mode: lighten;
     padding:0;
+}
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: navajowhite;
+}
+::-webkit-scrollbar-thumb {
+    background: deepskyblue;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 /*CONTACT BUTTONS*/
 .contactbutton{
@@ -80,7 +94,8 @@ html,body{
     height: 100%;
     width: 100%;
     display: none;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 @keyframes fadeEffect {
@@ -128,6 +143,9 @@ html,body{
 .imagecontainer img{
     width: 100%;
     border-radius: 2px;
+}
+.categoryDescription{
+
 }
 
 /***********************************/
