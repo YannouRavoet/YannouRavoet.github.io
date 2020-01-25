@@ -10,10 +10,10 @@
 </head>
 <body>
 <div id="header" class="container-fluid d-flex align-items-center justify-content-between">
-    <h1 style="padding-left:4em;" onclick=document.getElementById("AboutMeTab").click()>Yannou Ravoet</h1>
+    <h1 style="padding-left:4em;" >Yannou Ravoet</h1><!--onclick=document.getElementById("AboutMeTab").click()-->
     <div class="tab" style="margin-right:8em;">
         <button id="ProjectsTab" class="tablinks" onclick="openTab(event, 'ProjectCategories')">Projects</button>
-        <button id="AboutMeTab" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+        <!--<button id="AboutMeTab" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>-->
     </div>
 </div>
 <div id="body">
@@ -38,7 +38,7 @@
                         </div>
                         <div>
                             <h4>OpenAI GYM</h4>
-                            <p>Python, Reinforcement Learning, gym, tensorflow, docker</p>
+                            <p>Reinforcement Learning, Python, gym, tensorflow, docker, Q-learning, DQN, Double DQN</p>
                         </div>
                     </a>
                 </div>
@@ -49,7 +49,7 @@
                         </div>
                         <div>
                             <h4>Kaggle</h4>
-                            <p>Python, Machine Learning, scikit-learn, tensorflow</p>
+                            <p>Machine Learning, Python, scikit-learn, tensorflow</p>
                         </div>
                     </a>
                 </div>
@@ -127,7 +127,26 @@
             </div>
         </div>
     </div>
-
+    <div id="KaggleCategory" class="content align-items-center">
+        <div class="col-md-12">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-3 projectBox">
+                    <a href="https://yannouravoet.github.io">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projects/WorkInProgress.jpg">
+                        </div>
+                        <div>
+                            <h4>Titanic</h4>
+                            <p>Classification, scikit-learn, python, ensembles, decision trees, we'll see what more the project brings</p>
+                        </div>
+                        <a href="https://yannouravoet.github.io">
+                            <img class="githubLogo" src="resources/images/githubLogo.png">
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="footer" class="container-fluid d-flex align-items-center">
     <a class="contactLink" href="https://be.linkedin.com/in/yannou-ravoet-a59263156" style="margin-left: 6em;">
