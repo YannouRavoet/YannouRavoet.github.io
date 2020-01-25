@@ -6,13 +6,14 @@ html,body{
 #header{
     height: 10%;
     background: #1a1b1c;
-    color: white;
+    color: navajowhite;
     padding: 0;
 }
 #footer{
     height: 7.5%;
     background: #1a1b1c;
     padding: 0;
+    color: navajowhite;
 }
 #body{
     height:82.5%;
@@ -20,6 +21,22 @@ html,body{
     background-image: url("resources/images/graybackground.jpg");
     mix-blend-mode: lighten;
     padding:0;
+}
+/*CONTACT BUTTONS*/
+.contactbutton{
+    background: navajowhite;
+    filter: opacity(60%);
+    border-radius: 40%;
+    border: 0;
+    margin-left: 10px;
+    height: 75%;
+    width: 75%;
+}
+.contactbutton:hover{
+    background: deepskyblue;
+}
+.contactbutton:active{
+    background: deepskyblue;
 }
 
 /*TABS*/
@@ -31,7 +48,7 @@ html,body{
     position: relative;
     transition: 0.3s;
     padding: 10px;
-    color: white;
+    color: navajowhite;
 }
 .tab button:before {
     content: '';
@@ -91,7 +108,7 @@ html,body{
             0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .categoryBox a{
-    color: white;
+    color: navajowhite;
     filter: opacity(60%);
     width: fit-content;
 }
@@ -128,10 +145,11 @@ html,body{
             0 22.3px 17.9px rgba(0, 0, 0, 0.072),
             0 41.8px 33.4px rgba(0, 0, 0, 0.086),
             0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
 }
 
 .projectBox a{
-    color: white;
+    color: navajowhite;
     filter: opacity(60%);
     width: fit-content;
 }
@@ -142,7 +160,7 @@ html,body{
 }
 .githubLogo{
     height: 50px;
-    background: white;
+    background: navajowhite;
     margin-bottom: 10px;
 }
 

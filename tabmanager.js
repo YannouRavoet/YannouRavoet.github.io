@@ -8,7 +8,7 @@ function openTab(event, contentID){
     let tablinks = document.getElementsByClassName("tablinks");
     for(let i=0; i<tablinks.length; i++) {
         tablinks[i].classList.remove("active");
-        tablinks[i].style.color = "white";
+        tablinks[i].style.color = "navajowhite";
     }
     //Show the current tab
     document.getElementById(contentID).style.display = "flex";

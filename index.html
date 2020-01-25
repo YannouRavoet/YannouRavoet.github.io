@@ -10,11 +10,10 @@
 </head>
 <body>
 <div id="header" class="container-fluid d-flex align-items-center justify-content-between">
-    <h1 style="padding-left:4em;">Yannou Ravoet</h1>
+    <h1 style="padding-left:4em;" onclick=document.getElementById("AboutMeTab").click()>Yannou Ravoet</h1>
     <div class="tab" style="margin-right:8em;">
         <button id="ProjectsTab" class="tablinks" onclick="openTab(event, 'ProjectCategories')">Projects</button>
         <button id="AboutMeTab" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
-        <button id="ContactTab" class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
     </div>
 </div>
 <div id="body">
@@ -58,10 +57,7 @@
         </div>
     </div>
     <div id="AboutMe" class="content">
-        <h1>About Me</h1>
-    </div>
-    <div id="Contact" class="content">
-        <h1>Contact</h1>
+        <h4></h4>
     </div>
     <div id="UnityCategory" class="content align-items-center">
         <div class="col-md-12">
@@ -83,9 +79,72 @@
             </div>
         </div>
     </div>
+    <div id="OpenAICategory" class="content align-items-center">
+        <div class="col-md-12">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-3 projectBox">
+                    <a href="https://YannouRavoet.github.io/gymprojects#QLearning">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projects/Taxiv3.png">
+                        </div>
+                        <div>
+                            <h4>OpenAI: Taxi-v3</h4>
+                            <p>Python, Q-Learning, gym, numpy, argparse</p>
+                        </div>
+                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/Taxi_v3.py">
+                            <img class="githubLogo" src="resources/images/githubLogo.png">
+                        </a>
+                    </a>
+                </div>
+                <div class="col-md-3 projectBox">
+                    <a href="https://YannouRavoet.github.io/UnityShooter">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projects/CartPolev0.png">
+                        </div>
+                        <div>
+                            <h4>OpenAI: CartPole-v0</h4>
+                            <p>Python, DQN, tensorflow-keras, ANN, gym env wrappers</p>
+                        </div>
+                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/Cartpole_v0.py">
+                            <img class="githubLogo" src="resources/images/githubLogo.png">
+                        </a>
+                    </a>
+                </div>
+                <div class="col-md-3 projectBox">
+                    <a href="https://YannouRavoet.github.io/UnityShooter">
+                        <div class="imagecontainer">
+                            <img src="resources/images/projects/Breakout.png">
+                        </div>
+                        <div>
+                            <h4>OpenAI: Breakout</h4>
+                            <p>Python, Double DQN, tensorflow-keras, CNN, data wrangling</p>
+                        </div>
+                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/Breakout.py">
+                            <img class="githubLogo" src="resources/images/githubLogo.png">
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
-<div id="footer" class="container-fluid"></div>
+<div id="footer" class="container-fluid d-flex align-items-center">
+    <a class="contactLink" href="https://be.linkedin.com/in/yannou-ravoet-a59263156" style="margin-left: 6em;">
+        <img class="contactbutton" src="resources/images/contact/LinkedInLogo.png">
+    </a>
+    <a class="contactLink" href="https://www.facebook.com/yannou.ravoet">
+        <img class="contactbutton" src="resources/images/contact/FBLogo.png">
+    </a>
+    <a class="contactLink" href="https://www.github.com/YannouRavoet">
+        <img class="contactbutton" src="resources/images/contact/GithubLogo.png">
+    </a>
+    <div class="contactInfo" style="font-size: small; margin-left: 10px">
+        <p style="margin:0;">yannou.ravoet@gmail.com</p>
+        <p style="margin:0;">(+32) 488 150 177</p>
+    </div>
+
+</div>
 
 <script>
     document.getElementById("ProjectsTab").click();
