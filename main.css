@@ -18,9 +18,7 @@ html,body{
 }
 #body{
     height:82.5%;
-    background: #1a1b1c;
-    background-image: url("resources/images/graybackground.jpg");
-    mix-blend-mode: lighten;
+    background: #1a1b1c url("resources/images/graybackground.jpg");
     padding:0;
 }
 /*SCROLLBAR*/
