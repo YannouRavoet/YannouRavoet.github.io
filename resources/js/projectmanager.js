@@ -70,7 +70,13 @@ const allProjects = [
         [tags.PYTHON, tags.OPENPOSE, tags.CNN, tags.LSTM, tags.COMPUTERVISION],
         null,
         "resources/images/projects/BrainjarInternship.png",
-        "https://blog.raccoons.be/unforgettable-internship-brainjar")
+        "https://blog.raccoons.be/unforgettable-internship-brainjar"),
+    new Project(
+        "DeepFake Documentary",
+        [tags.PYTHON, tags.COMPUTERVISION, tags.CNN],
+        null,
+        "resources/images/projects/DeepFakes.png",
+        "https://vimeo.com/327167924")
 ]
 
 /*=====================*/

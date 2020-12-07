@@ -11,8 +11,6 @@
     padding: 2em;
 }
 .projectBox {
-    height: 10em;
-    width: 15em;
     background-color: var(--transparent-color);
     box-shadow: 0 0 5px 5px var(--transparent-color);
 
