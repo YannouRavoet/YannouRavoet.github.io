@@ -21,7 +21,11 @@ const tags = {
     RF: 'reinforcement_learning',
     KAGGLE: 'kaggle',
     OPENAI: 'OpenAI',
-    OPENSPIEL: 'OpenSpiel'
+    OPENSPIEL: 'OpenSpiel',
+    OPENPOSE: 'OpenPose',
+    CNN: 'Convolutional Neural Nets',
+    LSTM: 'Long Short-Term Neural Nets',
+    COMPUTERVISION: 'Computer Vision'
 }
 
 const allProjects = [
@@ -60,7 +64,13 @@ const allProjects = [
         [tags.PYTHON, tags.RF, tags.OPENSPIEL],
         "https://github.com/YannouRavoet/ml_project",
         "resources/images/projects/Poker.jpeg",
-        "https://github.com/YannouRavoet/ml_project")
+        "https://github.com/YannouRavoet/ml_project"),
+    new Project(
+        "Brainjar Internship",
+        [tags.PYTHON, tags.OPENPOSE, tags.CNN, tags.LSTM, tags.COMPUTERVISION],
+        null,
+        "resources/images/projects/BrainjarInternship.png",
+        "https://blog.raccoons.be/unforgettable-internship-brainjar")
 ]
 
 /*=====================*/
@@ -104,16 +114,18 @@ function makeProjectBox(index, project){
     let h4 = document.createElement('h4')
     h4.innerText = project.name;
     a_title.appendChild(h4);
-
-    let a_github = document.createElement('a')
-    a_github.href = project.githublink;
-    let img_github = document.createElement('img');
-    img_github.src = "resources/images/buttons/GitRepo.png";
-    img_github.classList.add('githubLink');
-    a_github.appendChild(img_github);
-
     title_div.appendChild(a_title);
-    title_div.appendChild(a_github);
+
+    if (project.githublink != null) {
+        let a_github = document.createElement('a')
+        a_github.href = project.githublink;
+        let img_github = document.createElement('img');
+        img_github.src = "resources/images/buttons/GitRepo.png";
+        img_github.classList.add('githubLink');
+        a_github.appendChild(img_github);
+        title_div.appendChild(a_github);
+    }
+
     box.appendChild(a_img);
     box.appendChild(title_div);
     return box;
