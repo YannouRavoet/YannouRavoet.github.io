@@ -18,7 +18,10 @@ const tags = {
     UNITY: 'unity',
     CSHARP: 'C#',
     PYTHON: 'python',
-    RF: 'reinforcement_learning'
+    RF: 'reinforcement_learning',
+    KAGGLE: 'kaggle',
+    OPENAI: 'OpenAI',
+    OPENSPIEL: 'OpenSpiel'
 }
 
 const allProjects = [
@@ -30,28 +33,34 @@ const allProjects = [
         "https://yannouravoet.github.io/UnityShooter/"),
     new Project(
         "OpenAI Taxi",
-        [tags.PYTHON, tags.RF],
+        [tags.PYTHON, tags.RF, tags.OPENAI],
         "https://github.com/YannouRavoet/gymprojects/blob/master/src/Taxi_v3.py",
         "resources/images/projects/OpenAI_Taxi.png",
         "https://YannouRavoet.github.io/gymprojects#QLearning"),
     new Project(
         "OpenAI Cartpole",
-        [tags.PYTHON, tags.RF],
+        [tags.PYTHON, tags.RF, tags.OPENAI],
         "https://github.com/YannouRavoet/gymprojects/blob/master/src/Cartpole_v0.py",
         "resources/images/projects/OpenAI_Cartpole.png",
         "https://YannouRavoet.github.io/gymprojects#DeepQ-Network"),
     new Project(
         "OpenAI Breakout",
-        [tags.PYTHON, tags.RF],
+        [tags.PYTHON, tags.RF, tags.OPENAI],
         "https://github.com/YannouRavoet/gymprojects/blob/master/src/Breakout.py",
         "resources/images/projects/OpenAI_Breakout.png",
         "https://YannouRavoet.github.io/gymprojects#DoubleDeepQ-Network"),
     new Project(
         "Kaggle Titanic",
-        [tags.PYTHON, tags.RF],
+        [tags.PYTHON, tags.KAGGLE],
         "https://github.com/YannouRavoet/titanic",
         "resources/images/projects/Kaggle_Titanic.png",
-        "https://yannouravoet.github.io/titanic")
+        "https://yannouravoet.github.io/titanic"),
+    new Project(
+        "OpenSpiel Poker",
+        [tags.PYTHON, tags.RF, tags.OPENSPIEL],
+        "https://github.com/YannouRavoet/ml_project",
+        "resources/images/projects/Poker.jpeg",
+        "https://github.com/YannouRavoet/ml_project")
 ]
 
 /*=====================*/
