@@ -1,0 +1,8 @@
+#aboutme_div {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--main-color);
+}

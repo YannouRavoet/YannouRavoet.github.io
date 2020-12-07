@@ -1,0 +1,54 @@
+:root{
+    --main-color: #ffdead;
+    --main-color-accent: deepskyblue;
+
+    --transparent-color: rgba(19, 28, 28, 0.7);
+}
+
+/*==============*/
+/*GENERAL LAYOUT*/
+/*==============*/
+html,body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+#background{
+    height:100%;
+    background: #1a1b1c url("../images/background.gif") no-repeat;
+    background-size: cover;
+}
+/*==============*/
+/*HEADER  LAYOUT*/
+/*==============*/
+#header{
+    height: 10%;
+    background-color: var(--transparent-color);
+    box-shadow: 0 0 5px 10px var(--transparent-color);
+    color: var(--main-color);
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+/*==============*/
+/* BODY  LAYOUT */
+/*==============*/
+#body{
+    height: 82.5%;
+    display: flex;
+}
+/*==============*/
+/*FOOTER  LAYOUT*/
+/*==============*/
+#footer{
+    height: 7.5%;
+    background-color: var(--transparent-color);
+    box-shadow: 0 0 5px 10px var(--transparent-color);
+    color: navajowhite;
+    padding: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+}

@@ -4,186 +4,25 @@
     <meta charset="UTF-8">
     <title>YannouRavoet.github.io</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <script src="tabmanager.js"></script>
-    <script src="projectmanager.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/footer.css">
+    <link rel="stylesheet" href="resources/css/projects.css">
+    <link rel="stylesheet" href="resources/css/aboutme.css">
+    <script src="resources/js/tabmanager.js"></script>
+    <script src="resources/js/projectmanager.js"></script>
 </head>
 <body>
-<div id="header" class="container-fluid d-flex align-items-center justify-content-between">
-    <h1 style="padding-left:4em;" >Yannou Ravoet</h1><!--onclick=document.getElementById("AboutMeTab").click()-->
-    <div class="tab" style="margin-right:8em;">
-        <button id="ProjectsTab" class="tablinks" onclick="openTab(event, 'ProjectCategories')">Projects</button>
-        <!--<button id="AboutMeTab" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>-->
-    </div>
+<div id="background">
+    <div id="header"></div>
+    <div id="body"></div>
+    <div id="footer"></div>
 </div>
-<div id="body">
-    <div id="ProjectCategories" class="content align-items-center">
-        <div class="col-md-12">
-            <div class="row d-flex justify-content-around">
-                <div id="Unity" class="col-md-3 categoryBox">
-                    <a onclick="openCategory('Unity')">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projectsCategories/UnityLogo.png">
-                        </div>
-                        <div class="categoryDescription">
-                            <h3>Unity</h3>
-                            <p style="margin-bottom: 0;">Game Development, C#</p>
-                            <p>TopDownShooter</p>
-                        </div>
-                    </a>
-                </div>
-                <div id="OpenAI" class="col-md-3 categoryBox">
-                    <a onclick="openCategory('OpenAI')">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projectsCategories/OpenAIGymLogo.jpg">
-                        </div>
-                        <div class="categoryDescription">
-                            <h3>OpenAI GYM</h3>
-                            <p style="margin-bottom: 0;">Reinforcement Learning, Python</p>
-                            <p>Q-learning, DQN, Double DQN, gym, tensorflow, docker</p>
-                        </div>
-                    </a>
-                </div>
-                <div id="Kaggle" class="col-md-3 categoryBox">
-                    <a onclick="openCategory('Kaggle')">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projectsCategories/KaggleLogo.jpg">
-                        </div>
-                        <div class="categoryDescription">
-                            <h3>Kaggle</h3>
-                            <p style="margin-bottom: 0;">Machine Learning, Python</p>
-                            <p>scikit-learn, tensorflow</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="AboutMe" class="content">
-        <h4></h4>
-    </div>
-    <div id="UnityCategory" class="content align-items-center">
-        <div class="col-md-12">
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-3 projectBox">
-                    <a href="https://YannouRavoet.github.io/UnityShooter">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/TopDownShooter.png">
-                        </div>
-                        <div>
-                            <h4>Top Down Shooter</h4>
-                            <p>C#, Map Generator, Camping Detection, Simple Enemy AI</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/TopDownShooter">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="OpenAICategory" class="content align-items-center">
-        <div class="col-md-12">
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-3 projectBox">
-                    <a href="https://YannouRavoet.github.io/gymprojects#QLearning">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/Taxiv3.png">
-                        </div>
-                        <div>
-                            <h4>OpenAI: Taxi-v3</h4>
-                            <p>Python, Q-Learning, gym, numpy, argparse</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/src/Taxi_v3.py">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-                <div class="col-md-3 projectBox">
-                    <a href="https://YannouRavoet.github.io/gymprojects#DeepQ-Network">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/CartPolev0.png">
-                        </div>
-                        <div>
-                            <h4>OpenAI: CartPole-v0</h4>
-                            <p>Python, DQN, tensorflow-keras, ANN, gym env wrappers</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/src/Cartpole_v0.py">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-                <div class="col-md-3 projectBox">
-                    <a href="https://YannouRavoet.github.io/gymprojects#DoubleDeepQ-Network">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/Breakout.png">
-                        </div>
-                        <div>
-                            <h4>OpenAI: Breakout</h4>
-                            <p>Python, Double DQN, tensorflow-keras, CNN, data wrangling</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/gymprojects/blob/master/src/Breakout.py">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="KaggleCategory" class="content align-items-center">
-        <div class="col-md-12">
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-3 projectBox">
-                    <a href="https://yannouravoet.github.io/titanic">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/Titanic.png">
-                        </div>
-                        <div>
-                            <h4>Titanic</h4>
-                            <p>Classification, pandas, scikit-learn, Decision Tree, Random Forests, Support Vector Machines</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/titanic">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-                <div class="col-md-3 projectBox">
-                    <a href="https://yannouravoet.github.io/asl_alphabet_classification/">
-                        <div class="imagecontainer">
-                            <img src="resources/images/projects/WorkInProgress.jpg">
-                        </div>
-                        <div>
-                            <h4>ASL Alphabet Classification</h4>
-                            <p>Classification, OpenCV, hand pose estimation, tensorflow-keras (ANN), webcam integration, data input/storage, 'teachable machine'</p>
-                        </div>
-                        <a href="https://github.com/YannouRavoet/asl_alphabet_classification">
-                            <img class="githubLogo" src="resources/images/githubLogo.png">
-                        </a>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="footer" class="container-fluid d-flex align-items-center">
-    <a class="contactLink" href="https://be.linkedin.com/in/yannou-ravoet-a59263156" style="margin-left: 6em;">
-        <img class="contactbutton" src="resources/images/contact/LinkedInLogo.png">
-    </a>
-    <a class="contactLink" href="https://www.facebook.com/yannou.ravoet">
-        <img class="contactbutton" src="resources/images/contact/FBLogo.png">
-    </a>
-    <a class="contactLink" href="https://www.github.com/YannouRavoet">
-        <img class="contactbutton" src="resources/images/contact/GithubLogo.png">
-    </a>
-    <div class="contactInfo" style="font-size: small; margin-left: 10px">
-        <p style="margin:0;">yannou.ravoet@gmail.com</p>
-        <p style="margin:0;">(+32) 488 150 177</p>
-    </div>
-
-</div>
-
-<script>
-    document.getElementById("ProjectsTab").click();
-</script>
 </body>
+<script>
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+</script>
 </html>
