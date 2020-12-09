@@ -1,8 +1,8 @@
 #aboutme_div {
     display: flex;
     text-align: center;
-    align-self: center;
     justify-content: center;
-    width: 100%;
+    margin: auto;
+    width: 80%;
     color: var(--main-color);
 }
