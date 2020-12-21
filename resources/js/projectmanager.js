@@ -66,7 +66,7 @@ const allProjects = [
         "OpenSpiel Poker",
         [tags.PYTHON, tags.RF, tags.OPENSPIEL],
         "https://github.com/YannouRavoet/ml_project",
-        "resources/images/projects/Poker.jpeg",
+        "resources/images/projects/Poker.png",
         "https://github.com/YannouRavoet/ml_project"),
     new Project(
         "Sign Language Classification (Brainjar Internship)",
