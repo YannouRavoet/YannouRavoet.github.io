@@ -69,7 +69,7 @@ const allProjects = [
         "resources/images/projects/Poker.jpeg",
         "https://github.com/YannouRavoet/ml_project"),
     new Project(
-        "Brainjar Internship",
+        "Sign Language Classification (Brainjar Internship)",
         [tags.PYTHON, tags.OPENPOSE, tags.CNN, tags.LSTM, tags.COMPUTERVISION],
         null,
         "resources/images/projects/BrainjarInternship.png",
