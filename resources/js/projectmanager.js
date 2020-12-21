@@ -25,7 +25,10 @@ const tags = {
     OPENPOSE: 'OpenPose',
     CNN: 'Convolutional Neural Nets',
     LSTM: 'Long Short-Term Neural Nets',
-    COMPUTERVISION: 'Computer Vision'
+    COMPUTERVISION: 'Computer Vision',
+    CPP: 'C++',
+    PATHFINDING: 'Pathfinding',
+    JPS: 'Jump Point Search'
 }
 
 const allProjects = [
@@ -76,7 +79,13 @@ const allProjects = [
         [tags.PYTHON, tags.COMPUTERVISION, tags.CNN],
         null,
         "resources/images/projects/DeepFakes.png",
-        "https://vimeo.com/327167924")
+        "https://vimeo.com/327167924"),
+    new Project(
+        "Pathfinding Project",
+        [tags.CPP, tags.PATHFINDING, tags.JPS],
+        "https://github.com/YannouRavoet/MediaProcessing_PathfindingGame_2018",
+        "resources/images/projects/MP_Pathfinding_2018.png",
+        "https://github.com/YannouRavoet/MediaProcessing_PathfindingGame_2018")
 ]
 
 /*=====================*/
