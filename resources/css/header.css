@@ -19,7 +19,6 @@
     border: none;
     font-size: 1.5em;
     position: relative;
-    transition: 0.3s;
     padding: 10px;
     color: var(--main-color);
 }
@@ -35,7 +34,7 @@
     right: 0;
     margin: 0 auto;
     width: 0;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .tab:hover:before {
     width: 100%;

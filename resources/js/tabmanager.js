@@ -10,9 +10,9 @@ function loadHeader(tab){
     $(tab.header_el).blur();
     let tab_els = document.getElementsByClassName("tab");
     for(let i=0; i<tab_els.length; i++) {
-        tab_els[i].style.color = "navajowhite";
+        tab_els[i].style.color = "var(--main-color)";
     }
-    $(tab.header_el)[0].style.color = 'deepskyblue';
+    $(tab.header_el)[0].style.color = 'var(--main-color-accent)';
 
 }
 
