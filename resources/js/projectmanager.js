@@ -5,13 +5,13 @@ A default set of projects is maintained here.
 /*=====================*/
 class Project{
     /*A Project datastructure that represents a github project.*/
-    constructor(name, tags, githublink, imgpath, description, date, weblink=null) {
+    constructor(name, tags, githublink, imgpath, description, year, weblink=null) {
         this.name = name;               //Name of the project
         this.tags = tags;               //Tags of the project used for filtering
         this.githublink = githublink;   //Link to GitHub repository
         this.imgpath = imgpath;         //image to display
         this.description = description; //description of the project (shown when hovering)
-        this.date = date;
+        this.year = year;
         this.weblink = weblink;         //Link to a webpage for the project *not required*
     }
 }
@@ -219,12 +219,12 @@ function makeHoverBox(project){
     let description = document.createElement('h6');
     description.innerText = project.description;
     description.style.textAlign = 'start';
-    let date = document.createElement('h6');
-    date.innerText = project.date;
-    date.style.textAlign = 'end';
+    let year = document.createElement('h6');
+    year.innerText = project.year;
+    year.style.textAlign = 'end';
     hoverbox.appendChild(description);
-    hoverbox.appendChild(date);
-    return [hoverbox, description, date];
+    hoverbox.appendChild(year);
+    return [hoverbox, description, year];
 }
 
 function filterProjects(tags){

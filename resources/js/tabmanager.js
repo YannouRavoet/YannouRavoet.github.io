@@ -6,8 +6,8 @@ const tabs={
     ABOUTME: {content:'aboutme.html', header_el:'#aboutme_tab'}
 }
 
-function loadHeader(tab){
-    $(tab.header_el).blur();
+function highlightHeader(tab){
+    $(tab.header_el).blur(); //removes focus
     let tab_els = document.getElementsByClassName("tab");
     for(let i=0; i<tab_els.length; i++) {
         tab_els[i].style.color = "var(--main-color)";
@@ -18,5 +18,5 @@ function loadHeader(tab){
 
 function loadContent(tab){
     $('#body').load(tab.content);
-    loadHeader(tab);
+    highlightHeader(tab);
 }

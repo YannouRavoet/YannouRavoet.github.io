@@ -6,3 +6,13 @@
     width: 80%;
     color: var(--main-color);
 }
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-style: italic;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--main-color-accent)
+}

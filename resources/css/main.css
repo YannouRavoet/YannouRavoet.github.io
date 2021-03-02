@@ -51,7 +51,7 @@ html,body{
 /*==============*/
 #footer{
     height: 7.5%;
-    color: navajowhite;
+    color: var(--main-color);
     padding: 0;
 
     display: flex;
