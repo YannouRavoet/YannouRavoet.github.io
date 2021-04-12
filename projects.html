@@ -2,5 +2,12 @@
 
 </div>
 <script>
-    displayProjects(allProjects);
+    $(document).ready(function(){
+        displayProjects(allProjects);
+    });
+
+    window.addEventListener('resize', function(){
+        displayProjects(allProjects);
+        console.log(window.innerWidth);
+    });
 </script>

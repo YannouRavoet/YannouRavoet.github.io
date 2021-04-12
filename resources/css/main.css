@@ -12,7 +12,6 @@
 html,body{
     height:100%;
     width:100%;
-    overflow: hidden;
 }
 #background{
     position: fixed;
@@ -45,6 +44,7 @@ html,body{
 #body{
     height: 82.5%;
     display: flex;
+    overflow: scroll;
 }
 /*==============*/
 /*FOOTER  LAYOUT*/
