@@ -58,7 +58,7 @@ const allProjects = [
         "resources/images/projects/DeepFakes.png",
         "How far could I get with publicly available deepfake tools...",
         2018,
-        "https://vimeo.com/327167924"),
+        "https://1drv.ms/v/s!AuRydHFX5aLuiYcBgqRD66yEWURtKw?e=fM7jFb"),
     new Project(
         "OpenAI Breakout",
         [tags.PYTHON, tags.RF, tags.OPENAI],
